@@ -1,0 +1,19 @@
+curl -u 01edd9199cd143e28d9f1dbc3e77dcff:k3kE3WGarYtQlkC14uRCfAIVRon0kyYx -d grant_type=client_credentials https://us.battle.net/oauth/token
+
+
+{
+      "id": 254,
+      "collectible": 1,
+      "slug": "254-innervate",
+      "classId": 2,
+      "cardTypeId": 5,
+      "cardSetId": 2,
+      "rarityId": 2,
+      "artistName": "Doug Alexander",
+      "manaCost": 0,
+      "name": "Innervate",
+      "text": "Gain 1 Mana Crystal this turn only.",
+      "image": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/ba76f5895f734927f34cbeb6938946caaaa261d1b7cb7d54282cb34b8b810025.png",
+      "flavorText": "Some druids still have flashbacks from strangers yelling \"Innervate me!!\" at them.",
+      "cropImage": "https://d15f34w2p8l1cc.cloudfront.net/hearthstone/603c6da3133b0bfcdc267898cabda4167402e4c8ca7a4ab43d7c1e5466a7ebf8.jpg"
+    },

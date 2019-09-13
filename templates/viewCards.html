@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> These are the Cards</h1>
+<ul>
+    <div className="container">
+        <div className="row">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{ cropImage }}" />
+                    <p style="color: black; text-align: center" class="card-text">
+                        {{ name }}
+                    </p>
+                    <p class="card-text">
+                        {{ text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</ul>
+{% endblock content %}
