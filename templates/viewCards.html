@@ -2,23 +2,23 @@
 
 {% block content %}
 <h1> These are the Cards</h1>
-<ul>
+<div class="background"> 
     <div className="container">
         <div className="row">
-            <div class="card">
-                <div class="card-body">
-                    <img src="{{ cropImage }}" />
-                    <p style="color: black; text-align: center" class="card-text">
-                        {{ name }}
-                    </p>
-                    <p class="card-text">
-                        {{ text }}
-                    </p>
+            {% for card in cards %}
+                <div class="card myCard">
+                    <div class="card-body">
+                        <img src="{{ card.cropImage }}" />
+                        <p style="color: black; text-align: center" class="card-text">
+                            {{ card.name }}
+                        </p>
+                        <p class="card-text">
+                            {{ card.text }}
+                        </p>
+                    </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
-
-
-</ul>
+</div>
 {% endblock content %}

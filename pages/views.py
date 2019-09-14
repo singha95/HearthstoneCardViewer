@@ -20,5 +20,5 @@ def cards_view(request, *args, **kwargs):
     #return HttpResponse("<h1> hellow World</h1>")
     bnet = Bnet()
     token = bnet.generate_token()
-    data = bnet.get_data(token, 'hearthstone/cards/52119-arch-villain-rafaam?locale=en_US')
+    data = bnet.get_data(token, 'hearthstone/cards?locale=en_US')
     return render(request, "viewCards.html", data )

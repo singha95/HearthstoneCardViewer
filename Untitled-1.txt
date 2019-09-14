@@ -1,5 +1,5 @@
 curl -u 01edd9199cd143e28d9f1dbc3e77dcff:k3kE3WGarYtQlkC14uRCfAIVRon0kyYx -d grant_type=client_credentials https://us.battle.net/oauth/token
-
+'hearthstone/cards?locale=en_US'
 
 {
       "id": 254,
