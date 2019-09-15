@@ -1,8 +1,51 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1> Hello World</h1>
-<p> 
-    {{ my_text }}
-</p>
+<div class="mainPage">
+    <div class="row Selection">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" 
+                role="tablist" style="width: 250%; padding-left: 75%">
+                <h5 class="list-group-item list-group-item-action active mb-1"
+                    style="text-align: center; ">
+                    Hearthstone Cards Application
+                </h5>
+                <a class="list-group-item list-group-item-action mb-1"
+                    style="text-align: left ; "}} href='/'>
+                        Cards
+            </a>
+                <div class="input-group mb-1">
+                    <a href="/cards">
+                        <div class="input-group-append">
+                            <button 
+                                class="btn btn-outline-secondary" 
+                                type="button">
+                                    Enter Pack Name
+                            </button>
+                        </div>
+                    </a>
+                    <input type="text" class="form-control" 
+                        placeholder="Enter Card Name" 
+                        name="searchRoster" 
+                     />
+                </div>
+                <div class="input-group mb-3">
+                    <a href="/Cards">
+                        <div class="input-group-append">
+                            <button 
+                                class="btn btn-outline-secondary" 
+                                type="button">
+                                    Place Holder
+                            </button>
+                        </div>
+                    </a>
+                    <input type="text" class="form-control" 
+                        placeholder="placeholder" 
+                        name="searchPlayer" 
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

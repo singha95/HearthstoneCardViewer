@@ -6,8 +6,8 @@ div.mainPage{
     height: calc(100% - 56px);
     width: 100%;
     position: absolute;
-    background-image: url('2753315.jpg');
-    background-color: white;
+    background-image: url('/static/img/stars.jpg');
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30% 30%;
