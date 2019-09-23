@@ -3,6 +3,10 @@
     transition: 0.2s;
 }
 
+.myCard img{ 
+    width: 200px;
+}
+
 .myCard:hover { 
     z-index: 5;
     transform: translateX(20px); 

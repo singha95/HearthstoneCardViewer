@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core import serializers
 
+import json
 from utils.bnet import Bnet
+from cards.models import Card
 
 import os 
 
@@ -22,3 +25,11 @@ def cards_view(request, *args, **kwargs):
     token = bnet.generate_token()
     data = bnet.get_data(token, 'hearthstone/cards?locale=en_US')
     return render(request, "viewCards.html", data )
+
+def get_cards_search(request, *args, **kwargs): 
+    url = request.get_full_path()
+    name_search = url.split("=")[1]
+    cards_json = json.loads(serializers.serialize("json", Card.objects.filter(name__contains=name_search)))
+    cards_json = [ x["fields"] for x in cards_json ]
+    data = { "cards" : cards_json}
+    return render(request, "viewCards.html", data ) 
